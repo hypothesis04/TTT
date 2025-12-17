@@ -1,0 +1,52 @@
+/* assets/css/style.css */
+
+/* 1. Cuộn trang mượt mà cho toàn web */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Tùy chỉnh thanh cuộn (Scrollbar) cho ra dáng công nghiệp/kỹ thuật */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003366; /* Màu xanh TTT */
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFCD00; /* Màu cam TTT khi di chuột vào */
+}
+
+/* 3. Hiệu ứng loading cho ảnh dự án */
+.img-loading {
+    filter: blur(10px);
+    transition: filter 0.5s ease-in-out;
+}
+.img-loaded {
+    filter: blur(0);
+}
+
+/* 4. Map Container: Giữ khung bản đồ luôn chuẩn tỉ lệ */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+#hero-bg {
+    transition: opacity 3s ease-in-out;
+}

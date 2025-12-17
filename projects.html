@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án - Thông Trường Thịnh M&E</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'ttt-blue': '#003366', 'ttt-orange': '#FFCD00' }, fontFamily: { 'display': ['Oswald', 'sans-serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body bg-gray-50 pt-20">
+
+    <header id="global-header"></header>
+
+    <section class="bg-ttt-blue py-16 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-display font-bold uppercase mb-2">Hồ Sơ Năng Lực</h1>
+        <p class="text-gray-300">Khẳng định chất lượng qua từng công trình</p>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <div class="w-2 h-10 bg-ttt-orange mr-4"></div>
+                <h2 class="text-3xl font-display font-bold text-ttt-blue">DỰ ÁN ĐÃ HOÀN THÀNH</h2>
+            </div>
+            <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <div class="w-2 h-10 bg-green-600 mr-4"></div> <h2 class="text-3xl font-display font-bold text-ttt-blue">DỰ ÁN ĐANG THỰC HIỆN</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border-2 border-dashed border-gray-300 rounded-lg h-64 flex flex-col items-center justify-center text-gray-400 bg-gray-50">
+                    <i class="fas fa-hard-hat text-4xl mb-3"></i>
+                    <span class="font-bold">Đang cập nhật...</span>
+                </div>
+                 <div class="border-2 border-dashed border-gray-300 rounded-lg h-64 flex flex-col items-center justify-center text-gray-400 bg-gray-50">
+                    <i class="fas fa-tools text-4xl mb-3"></i>
+                    <span class="font-bold">Đang cập nhật...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50 border-t">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <div class="w-2 h-10 bg-blue-400 mr-4"></div> <h2 class="text-3xl font-display font-bold text-ttt-blue">DỰ ÁN SẮP TRIỂN KHAI</h2>
+            </div>
+            <div class="p-8 bg-white rounded shadow-sm text-center">
+                <p class="text-gray-500 italic">Thông tin các gói thầu mới sẽ được cập nhật sớm nhất.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="global-footer"></footer>
+    <script src="data/content.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

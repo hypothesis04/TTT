@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Thông Trường Thịnh M&E</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'ttt-blue': '#003366', 'ttt-orange': '#FFCD00' }, fontFamily: { 'display': ['Oswald', 'sans-serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body text-gray-800 bg-white pt-20"> 
+
+    <div id="global-header"></div>
+
+    <section class="relative h-screen flex items-center" id="home">
+        <div class="absolute inset-0 z-0">
+            <img id="hero-bg" src="assets/img/hero-bg-1.jpg" alt="Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+        </div>
+        <div class="container mx-auto px-4 z-20 text-white relative">
+            <div class="max-w-4xl animate-fade-in-up">
+                <span class="text-ttt-orange font-bold tracking-widest uppercase mb-4 block border-l-4 border-ttt-orange pl-3 text-lg md:text-xl">Thông Trường Thịnh</span>
+                <h1 id="hero-headline" class="text-4xl md:text-6xl font-display font-bold mb-6 drop-shadow-xl uppercase tracking-wider" style="line-height: 1.6 !important; padding: 10px 0;">Loading...</h1>
+                <p id="hero-sub" class="text-lg md:text-2xl text-gray-200 mb-10 font-light max-w-3xl leading-relaxed">Loading...</p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <a href="projects.html" class="bg-ttt-orange text-ttt-blue font-bold px-10 py-4 rounded text-center text-lg hover:bg-yellow-400 transition shadow-lg">XEM DỰ ÁN</a>
+                    <a href="contact.html" class="border-2 border-white text-white font-bold px-10 py-4 rounded text-center text-lg hover:bg-white hover:text-ttt-blue transition">LIÊN HỆ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50 border-b">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-gray-500 text-sm uppercase tracking-widest mb-8">Đối tác chiến lược</p>
+            <div id="partner-list" class="flex flex-wrap justify-center items-center gap-10 md:gap-20"></div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-ttt-blue mb-4">LĨNH VỰC HOẠT ĐỘNG</h2>
+                <div class="w-24 h-1.5 bg-ttt-orange mx-auto rounded"></div>
+            </div>
+            <div id="service-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+        </div>
+    </section>
+
+    <div id="global-footer"></div>
+
+    <script src="data/content.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

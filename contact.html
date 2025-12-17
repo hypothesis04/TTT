@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Thông Trường Thịnh M&E</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'ttt-blue': '#003366', 'ttt-orange': '#FFCD00' }, fontFamily: { 'display': ['Oswald', 'sans-serif'], 'body': ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="font-body bg-gray-50 pt-20">
+
+    <header id="global-header"></header>
+
+    <section class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl font-display font-bold text-center text-ttt-blue mb-12 uppercase">Liên Hệ Hợp Tác</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-2xl rounded-xl overflow-hidden bg-white">
+            <div class="p-10">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Gửi tin nhắn cho chúng tôi</h3>
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label class="block font-bold text-sm mb-2">Họ và Tên</label>
+                        <input type="text" id="name" required class="w-full border p-3 rounded focus:outline-none focus:border-ttt-blue bg-gray-50">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-sm mb-2">Số Điện Thoại</label>
+                        <input type="tel" id="phone" required class="w-full border p-3 rounded focus:outline-none focus:border-ttt-blue bg-gray-50">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-sm mb-2">Email</label>
+                        <input type="email" id="email" class="w-full border p-3 rounded focus:outline-none focus:border-ttt-blue bg-gray-50">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-sm mb-2">Nội dung</label>
+                        <textarea id="message" rows="4" class="w-full border p-3 rounded focus:outline-none focus:border-ttt-blue bg-gray-50"></textarea>
+                    </div>
+                    <button type="submit" id="btn-submit" class="w-full bg-ttt-blue text-white font-bold py-4 rounded hover:bg-ttt-orange transition">GỬI NGAY</button>
+                </form>
+            </div>
+            
+            <div class="bg-ttt-blue text-white flex flex-col">
+                <div class="p-10 bg-black/10">
+                    <h4 class="text-xl font-bold text-ttt-orange mb-6">THÔNG TIN VĂN PHÒNG</h4>
+                    <ul class="space-y-4">
+                        <li class="flex"><i class="fas fa-map-marker-alt w-8 mt-1 text-ttt-orange"></i> <span id="contact-address">Loading...</span></li>
+                        <li class="flex"><i class="fas fa-phone w-8 mt-1 text-ttt-orange"></i> <span id="contact-phone" class="font-bold text-xl">Loading...</span></li>
+                        <li class="flex"><i class="fas fa-envelope w-8 mt-1 text-ttt-orange"></i> <span id="contact-email">Loading...</span></li>
+                    </ul>
+                </div>
+                <div id="google-map-container" class="flex-grow min-h-[300px] bg-gray-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="global-footer"></footer>
+    <script src="data/content.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thongtruongthinhme.com/sitemap.xml
