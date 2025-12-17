@@ -75,7 +75,7 @@ const websiteData = {
             location: "Quận 1, TP.HCM",
             role: "Cung cấp vật tư và Thi công hệ thống M&E",
             investor: "Keppel Land",
-            image: "assets/img/projects/Saigon-centre.jpg",
+            image: "assets/img/projects/Saigon-Centre.jpg",
             category: "Thương Mại"
         },
         {
